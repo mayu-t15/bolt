@@ -39,9 +39,13 @@ body {
   float: right;
   font-size: 12px;
   padding: 14px 12px;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
-
+.header-contact:hover {
+  color: #333;
+}
 
 .title {
   padding: 250px 0;
@@ -95,7 +99,7 @@ body {
 }
 
 
-.works{
+.works {
   color: #4e4e4e;
   background-color: #f2f2f2;
   padding: 60px 0 70px;
@@ -103,51 +107,67 @@ body {
   width: 100%;
 }
 
-.works__title{
+.works__title {
   font-family: Raleway;
   font-size: 24px;
   margin-bottom: 40px;
 }
 
-.works__figures{
+.works__figures {
   display: flex;
   flex-wrap: wrap;
 }
 
-.works__figures--figure{
+.works__figures--figure {
   margin-right: 100px;
   margin-bottom: 80px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.works__figures--figure:hover {
+  opacity: 1;
 }
 
-.works__figures--figure:nth-child(3n){
+.works__figures--figure:nth-child(3n) {
   margin-right: 0;
 }
 
 
-.works__desc{
-  display: flex;
+.works__desc {
   font-size: 12px;
+  font-size: 0;
   margin-top: 10px;
-  padding: 0 90px;
 }
-.works__desc--text{
+
+.works__desc--text {
+  display: inline-block;
   font-size: 20px;
   line-height: 1.5em;
+  width: 600px;
+  vertical-align: middle;
 }
-.works__desc--mailButton{
+.works__desc--mailButton {
   background-color: #74cfae;;
   color: #fff;
-  padding: 14px 20px;
+  display: inline-block;
+  font-size: 12px;
   margin-left: 90px;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: .3s;
+  vertical-align: middle;
 }
+.works__desc--mailButton:hover {
+  color: #333;
+}
+
 /* 
-worksのdescription部分の余白はどうなっているのか？
-textが横に広すぎる、ボタンが改行してしまう */
+works__desc--textの部分は勝手にwidthを指定してようのか？しなくてもできるはずなのか？ */
 
 
-.skills{
-  color: #fff;
+.skills {
   background-color: #4e4e4e;
+  color: #fff;
   padding: 70px 0 100px;
 }
 
@@ -155,48 +175,52 @@ textが横に広すぎる、ボタンが改行してしまう */
 
 }
 
-.skills__title{
+.skills__title {
   font-family: Raleway;
   text-align: center;
   font-size: 24px;
 }
 
-.skill-figures{
+.skill-figures {
   margin-top: 50px;
 }
 
-.skill{
+.skill {
   display: inline-block;
   margin-left: 180px;
   text-align: center;;
 }
 
-.skill > p{
+.skill > p {
   margin-top: 20px;
   text-align: center;
 }
 
-.skill:first-child{
+.skill:first-child {
   margin-left: 0;
 }
 /* .skill:first-child::after{
   content="JavaScript"
 } */
 
-.nav-base{
+.nav-base {
   background-color: #f2f2f2;
 }
-
-.nav-inner{
+.nav-inner {
   padding: 200px 0;
   text-align: center;
 }
-.icons{
+
+.icons {
   color: #74cfae;
   font-size: 3em;
-  width: 185px;
   height: 100px;
+  width: 185px;
+  transition: .3s;
   /* position: relative; */
+}
+.icons:hover {
+  background-color: #fff;
 }
 
 /* icons::before{
@@ -205,16 +229,14 @@ textが横に広すぎる、ボタンが改行してしまう */
 } */
 
 
-.footer-base{
+.footer-base {
   background-color: #74cfae;
   color: #fff;
 }
-
-.footer-inner{
+.footer-inner {
   padding: 20px 0 25px;
   text-align: end;
 }
-
-.footer-base > p{
+.footer-base > p {
   display: inline-block;
 }
