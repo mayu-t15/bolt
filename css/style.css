@@ -1,0 +1,220 @@
+@charset "utf-8"
+
+body {
+  font-family: 'Lato';
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  /* box-sizing: border-box; */
+}
+
+.boltHeader {
+  background-color: lemonchiffon;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.header-container::after {
+  content: “”;
+  clear: both;
+  display: block;
+}
+
+.header-icon {
+  color: #4e4e4e;
+  float: left;
+  font-size: 40px;
+}
+
+.header-contact {
+  background-color: #74cfae;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  padding: 14px 12px;
+}
+
+
+
+.title {
+  padding: 250px 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-family: Raleway;
+  text-align: center;
+}
+
+.titleName {
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom:20px;
+}
+
+.titleSub {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+
+
+.desc {
+  background-color: #74cfae;
+  color: #fff;
+}
+
+.desc-inner{
+  display: flex;
+}
+
+
+.desc-figure {
+  padding-top: 50px;
+  padding-left: 150px;
+}
+
+.desc-content {
+  /* display: table-cell; */
+  font-size: 20px;
+  text-align: center;
+  padding-left: 150px;
+  align-self: center;
+}
+
+.desc-title {
+  font-size: 24px;
+  font-family: Raleway;
+  padding-bottom: 35px;
+}
+
+
+.works{
+  color: #4e4e4e;
+  background-color: #f2f2f2;
+  padding: 60px 0 70px;
+  text-align: center;
+  width: 100%;
+}
+
+.works__title{
+  font-family: Raleway;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.works__figures{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works__figures--figure{
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+.works__figures--figure:nth-child(3n){
+  margin-right: 0;
+}
+
+
+.works__desc{
+  display: flex;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 0 90px;
+}
+.works__desc--text{
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.works__desc--mailButton{
+  background-color: #74cfae;;
+  color: #fff;
+  padding: 14px 20px;
+  margin-left: 90px;
+}
+/* 
+worksのdescription部分の余白はどうなっているのか？
+textが横に広すぎる、ボタンが改行してしまう */
+
+
+.skills{
+  color: #fff;
+  background-color: #4e4e4e;
+  padding: 70px 0 100px;
+}
+
+.skills-inner{
+
+}
+
+.skills__title{
+  font-family: Raleway;
+  text-align: center;
+  font-size: 24px;
+}
+
+.skill-figures{
+  margin-top: 50px;
+}
+
+.skill{
+  display: inline-block;
+  margin-left: 180px;
+  text-align: center;;
+}
+
+.skill > p{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.skill:first-child{
+  margin-left: 0;
+}
+/* .skill:first-child::after{
+  content="JavaScript"
+} */
+
+.nav-base{
+  background-color: #f2f2f2;
+}
+
+.nav-inner{
+  padding: 200px 0;
+  text-align: center;
+}
+.icons{
+  color: #74cfae;
+  font-size: 3em;
+  width: 185px;
+  height: 100px;
+  /* position: relative; */
+}
+
+/* icons::before{
+  position: absolute;
+  top: 15px;
+} */
+
+
+.footer-base{
+  background-color: #74cfae;
+  color: #fff;
+}
+
+.footer-inner{
+  padding: 20px 0 25px;
+  text-align: end;
+}
+
+.footer-base > p{
+  display: inline-block;
+}
