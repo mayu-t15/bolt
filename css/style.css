@@ -3,30 +3,28 @@
 body {
   font-family: 'Lato';
 }
-
 .inner {
   width: 1100px;
   margin: 0 auto;
   /* box-sizing: border-box; */
 }
 
+
 .boltHeader {
-  background-color: lemonchiffon;
+  background-color: #fff;
   box-sizing: border-box;
   height: 70px;
   padding: 15px 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 50;
 }
-
-
-.header-container::after {
+.header-inner::after {
   content: “”;
   clear: both;
   display: block;
 }
-
 .header-icon {
   color: #4e4e4e;
   float: left;
@@ -42,10 +40,12 @@ body {
   transition: 0.3s;
   text-decoration: none;
 }
-
 .header-contact:hover {
   color: #333;
 }
+
+
+
 
 .title {
   padding: 250px 0;
@@ -54,14 +54,12 @@ body {
   font-family: Raleway;
   text-align: center;
 }
-
 .titleName {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
   margin-bottom:20px;
 }
-
 .titleSub {
   font-size: 30px;
   color: #c0c0c0;
@@ -69,34 +67,32 @@ body {
 
 
 
+
 .desc {
   background-color: #74cfae;
   color: #fff;
 }
-
 .desc-inner{
   display: flex;
 }
-
-
 .desc-figure {
   padding-top: 50px;
   padding-left: 150px;
 }
-
 .desc-content {
   /* display: table-cell; */
   font-size: 20px;
   text-align: center;
-  padding-left: 150px;
+  margin-left: 150px;
   align-self: center;
 }
-
 .desc-title {
   font-size: 24px;
   font-family: Raleway;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
+
+
 
 
 .works {
@@ -106,18 +102,15 @@ body {
   text-align: center;
   width: 100%;
 }
-
 .works__title {
   font-family: Raleway;
   font-size: 24px;
   margin-bottom: 40px;
 }
-
 .works__figures {
   display: flex;
   flex-wrap: wrap;
 }
-
 .works__figures--figure {
   margin-right: 100px;
   margin-bottom: 80px;
@@ -127,25 +120,22 @@ body {
 .works__figures--figure:hover {
   opacity: 1;
 }
-
 .works__figures--figure:nth-child(3n) {
   margin-right: 0;
 }
-
 
 .works__desc {
   font-size: 12px;
   font-size: 0;
   margin-top: 10px;
 }
-
 .works__desc--text {
   display: inline-block;
   font-size: 20px;
   line-height: 1.5em;
   width: 600px;
   /* 
-  works__desc--textの部分は勝手にwidthを指定してようのか？しなくてもできるはずなのか？ */
+  works__desc--textの部分は勝手にwidthをしなくてもできるはずなのか？ */
   vertical-align: middle;
 }
 .works__desc--mailButton {
@@ -192,9 +182,7 @@ body {
 .skill:first-child {
   margin-left: 0;
 }
-/* .skill:first-child::after{
-  content="JavaScript"
-} */
+
 
 .nav-base {
   background-color: #f2f2f2;
@@ -207,8 +195,9 @@ body {
 .icons {
   color: #74cfae;
   font-size: 3em;
-  height: 100px;
   width: 185px;
+  padding: 25px 0;
+  text-decoration: none;
   transition: .3s;
   /* position: relative; */
 }
