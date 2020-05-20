@@ -144,6 +144,8 @@ body {
   font-size: 20px;
   line-height: 1.5em;
   width: 600px;
+  /* 
+  works__desc--textの部分は勝手にwidthを指定してようのか？しなくてもできるはずなのか？ */
   vertical-align: middle;
 }
 .works__desc--mailButton {
@@ -161,8 +163,6 @@ body {
   color: #333;
 }
 
-/* 
-works__desc--textの部分は勝手にwidthを指定してようのか？しなくてもできるはずなのか？ */
 
 
 .skills {
@@ -170,21 +170,14 @@ works__desc--textの部分は勝手にwidthを指定してようのか？しな�
   color: #fff;
   padding: 70px 0 100px;
 }
-
-.skills-inner{
-
-}
-
 .skills__title {
   font-family: Raleway;
   text-align: center;
   font-size: 24px;
 }
-
 .skill-figures {
   margin-top: 50px;
 }
-
 .skill {
   display: inline-block;
   margin-left: 180px;
@@ -223,10 +216,11 @@ works__desc--textの部分は勝手にwidthを指定してようのか？しな�
   background-color: #fff;
 }
 
-/* icons::before{
-  position: absolute;
-  top: 15px;
-} */
+icons::before{
+  /* vertical-align: middle; */
+  /* position: absolute;
+  top: 15px; */
+}
 
 
 .footer-base {
