@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 body {
   font-family: 'Lato';
@@ -6,6 +6,9 @@ body {
 .inner {
   width: 1100px;
   margin: 0 auto;
+}
+.font_r{
+  font-family: Raleway;
 }
 
 
@@ -43,22 +46,21 @@ body {
 }
 
 
-
-
+.main{
+  padding-top: 70px;
+}
 .title {
   padding: 250px 0;
   width: 100%;
   background-color: #f2f2f2;
-  font-family: Raleway;
-  padding-top: 321.333px;
   text-align: center;
 }
-.titleName {
+.title__name {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
 }
-.titleSub {
+.title__sub {
   color: #c0c0c0;
   font-size: 30px;
   margin-top:20px; 
@@ -87,7 +89,6 @@ body {
 }
 .desc__content--title {
   font-size: 24px;
-  font-family: Raleway;
 }
 .desc__content--detail{
   margin-top: 35px;
@@ -103,7 +104,6 @@ body {
   width: 100%;
 }
 .works__title {
-  font-family: Raleway;
   font-size: 24px;
 }
 .works__figures {
@@ -117,7 +117,9 @@ body {
   opacity: 0.7;
   transition: 0.3s;
 }
-/* works__figures--figure直下の画像の親要素aタグが変なところになる。 */
+.works__figures a{
+  display: inline-block;
+}
 
 .works__figures--figure:hover {
   opacity: 1;
@@ -143,8 +145,8 @@ body {
   works__desc--textの部分は勝手にwidthをしなくてもできるはずなのか？ */
   vertical-align: middle;
 }
-.works__desc--mailButton {
-  background-color: #74cfae;;
+.works__desc--mail-button {
+  background-color: #74cfae;
   color: #fff;
   display: inline-block;
   font-size: 12px;
@@ -154,7 +156,7 @@ body {
   transition: .3s;
   vertical-align: middle;
 }
-.works__desc--mailButton:hover {
+.works__desc--mail-button:hover {
   color: #333;
 }
 
@@ -166,7 +168,6 @@ body {
   padding: 70px 0 100px;
 }
 .skills__title {
-  font-family: Raleway;
   text-align: center;
   font-size: 24px;
 }
@@ -177,7 +178,7 @@ body {
 .skill {
   display: inline-block;
   margin-left: 180px;
-  text-align: center;;
+  text-align: center;
 }
 .skill > figcaption {
   margin-top: 20px;
@@ -188,6 +189,7 @@ body {
 }
 
 
+
 .nav-base {
   background-color: #f2f2f2;
   padding: 200px 0;
@@ -195,7 +197,9 @@ body {
 .nav-inner {
   text-align: center;
 }
-
+.nav-base a{
+ display: inline-block;
+}
 .icons {
   color: #74cfae;
   font-size: 3em;
