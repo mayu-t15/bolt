@@ -109,7 +109,7 @@ body {
 .works__figures {
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 0 80px;
+  margin: 40px 0 90px;
 }
 .works__figures--figure {
   margin-right: 100px;
@@ -132,9 +132,7 @@ body {
 }
 
 .works__desc {
-  font-size: 12px;
   font-size: 0;
-  margin-top: 10px;
 }
 .works__desc--text {
   display: inline-block;
