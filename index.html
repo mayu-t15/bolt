@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="boltHeader">
-      <div class="inner header-inner">
-        <i class="fas fa-bolt header-icon"></i>
-        <a href="" class="header-contact">Contact</a>
+    <header class="bolt-header">
+      <div class="inner bolt-header-inner">
+        <i class="fas fa-bolt bolt-header__icon"></i>
+        <a href="" class="bolt-header__contact">Contact</a>
       </div>
     </header>
 
@@ -25,19 +25,18 @@
       <div class="title">
         <div class="inner">
           <h1 class="titleName">Bolt Theme</h1>
-          <h2 class="titleSub">FREE BOOTSTRAP THEMES</p>
+          <p class="titleSub">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
 
       <section class="desc">
         <div class="inner desc-inner">
-          <figure class="desc-figure">
+          <div class="desc__figure">
             <img src="./img/iphone.png">
-          </figure>
-          
-          <div class="desc-content">
-            <h3 class="desc-title">WHAT WE CAN DO?</h3>
-            <p class="desc-detail">
+          </div>
+          <div class="desc__content">
+            <h2 class="desc__content--title">WHAT WE CAN DO?</h2>
+            <p class="desc__content--detail">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
           </div>
@@ -47,32 +46,40 @@
       <article class="works">
         <div class="inner">
 
-          <h3 class="works__title">OUR LATEST WORK</h3>
+          <h2 class="works__title">OUR LATEST WORK</h2>
 
           <div class="works__figures">
-            <figure class="works__figures--figure">
-              <img src="./img/01.jpg">
-            </figure>
+            <div class="works__figures--figure">
+              <a href="">
+                <img src="./img/01.jpg">
+              </a>
+            </div>
+            <div class="works__figures--figure">
+              <a href="">
+                <img src="./img/02.jpg">
+              </a>
+            </div>
+            <div class="works__figures--figure">
+              <a href="">
+                <img src="./img/03.jpg">
+              </a>
+            </div>
+            <div class="works__figures--figure">
+              <a href="">
+                <img src="./img/04.jpg">
+              </a>
+            </div>
+            <div class="works__figures--figure">
+              <a href="">
+                <img src="./img/05.jpg">
+              </a>
+            </div>
+            <div class="works__figures--figure">
+              <a href="">
+                <img src="./img/06.jpg">
+              </a>
+            </div>
 
-            <figure class="works__figures--figure">
-              <img src="./img/02.jpg">
-            </figure>
-
-            <figure class="works__figures--figure">
-              <img src="./img/03.jpg">
-            </figure>
-
-            <figure class="works__figures--figure">
-              <img src="./img/04.jpg">
-            </figure>
-
-            <figure class="works__figures--figure">
-              <img src="./img/05.jpg">
-            </figure>
-
-            <figure class="works__figures--figure">
-              <img src="./img/06.jpg">
-            </figure>
             
           </div>
 
@@ -87,39 +94,33 @@
 
       <section class="skills">
         <div class="inner">
-          <h3 class="skills__title">OUR SKILLS</h3>
+          <h2 class="skills__title">OUR SKILLS</h2>
 
-          <div class="skill-figures">
+          <div class="skill__figures">
             <figure class="skill">
               <img src="./img/circle_01.png">
-              <p>JavaScript</p>
+              <figcaption>JavaScript</figcaption>
             </figure>
-  
             <figure class="skill">
               <img src="./img/circle_02.png">
-              <p>Bootstrap</p>
+              <figcaption>Bootstrap</figcaption>
             </figure>
-  
             <figure class="skill">
               <img src="./img/circle_03.png">
-              <p>WordPress</p>
+              <figcaption>WordPress</figcaption>
             </figure>
-  
             <figure class="skill">
               <img src="./img/circle_04.png">
-              <p>Photoshop</p>
+              <figcaption>Photoshop</figcaption>
             </figure>
-            
           </div>
-
         </div>
-        <!-- name:  skills__inner-figuresとかにすべき？ -->
       </section>
 
       <nav class="nav-base">
         <div class="inner nav-inner">
           <a href="" class="fab fa-facebook-f icons"></a>
-          <a href="" class="fas fa-basketball-ball icons"></a>
+          <a href="" class="fab fa-dribbble icons"></a>
           <a href="" class="fab fa-twitter icons"></a>
           <a href="" class="fas fa-envelope icons"></a>
         </div>
