@@ -1,43 +1,5 @@
 @charset "utf-8";
 
-@media screen and (max-width: 1199px) {
-  .inner{
-    width: 100%;
-  }
-  .bolt-header{
-    padding: 15px;
-  }
-  .desc{
-    padding-bottom: 25px;
-    color: red;
-  }
-  .desc-inner{
-    display: block;
-  }
-  .desc__content {
-    text-align: center;
-    margin-top: 20p;
-  }
-  /* .desc__content--detail{
-
-  } */
-}
-
-/* @media screen and(max-width: 767px)
-{
-  .inner{
-    width: 100%;
-  } */
-  /* .bolt-header__contact{
-    display: none;
-  }
-  .menu-ph{
-    display: block;
-  }
-  .menu-bar{
-    color:#f2f2f2;
-  }
-} */
 
 
 
@@ -56,6 +18,10 @@ body {
 .menu-sp{
   display: none;
 }
+.menu-content {
+  display: none;
+}
+
 .bolt-header {
   background-color: #fff;
   box-sizing: border-box;
@@ -128,7 +94,6 @@ body {
   padding-left: 150px;
 }
 .desc__content {
-  /* display: table-cell; */
   font-size: 20px;
   text-align: center;
   margin-left: 150px;
@@ -139,6 +104,7 @@ body {
 }
 .desc__content--detail{
   margin-top: 35px;
+  line-height: 1.3em;
 }
 
 
@@ -243,7 +209,7 @@ body {
   text-align: center;
 }
 .nav-base a{
- display: inline-block;
+  display: inline-block;
 }
 .icons {
   color: #74cfae;
@@ -270,3 +236,161 @@ body {
 .footer-base > p {
   display: inline-block;
 }
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+  .inner{
+    width: 100%;
+  }
+
+  .bolt-header{
+    padding: 15px;
+  }
+
+  .desc{
+    padding-bottom: 25px;
+  }
+  .desc-inner{
+    display: block;
+    text-align: center;
+  }
+  .desc__figure{
+    padding-left: 0;
+  }
+  .desc__content {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+  /* textがどんどん小さくなっていく。
+  ある程度のwidthで固定したほうがいいのか？ */
+
+
+  .works__figures{
+    display: block;
+    font-size: 0;
+  }
+  .works__figures--figure{
+    margin: 0;
+  }
+  .works__figures--figure:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  .works__desc {
+    padding: 0 15px;
+  }
+  .works__desc--text {
+    display: block;
+    width: 100%;
+  }
+  .works__desc--mail-button {
+    margin: 40px 0 0;
+  }
+
+  
+
+  .skill {
+    display: block;
+    margin: 88px 0 0;
+  }
+  .skill:nth-child(1) {
+    margin-top: 0;
+  }
+
+
+  .footer-base {
+    padding: 0 15px;
+  }
+} 
+
+
+
+@media screen and (max-width: 767px)
+{
+  /* .bolt-header {
+    position: relative;
+    なんで変ななる？
+  } */
+  .bolt-header__contact {
+    display: none;
+  }
+  .menu-sp {
+    display: block;
+    float: right;
+  }
+
+  .menu-unshown-checkbox {
+    display: none;
+  }
+  #menu-icon:hover {
+    cursor: pointer;
+  }
+  #menu-icon {
+    border-radius: 4px;
+    color: #ddd;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: center;
+    box-sizing: border-box;
+  }
+  .menu-contents {
+    display: none;
+    padding: 15px 0;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2; */
+  }
+  .menu-contact {
+    padding: 20px;
+    background-color: #74cfae;
+  }
+
+  #menu-icon:checked .menu-contents {
+    display: block;
+    top: 73px;
+    left: 0;
+  }
+
+
+  /* .menu-bar:before{
+    width: 1.8em;
+    バーの横幅が違う
+  } */
+
+  /* menu-iconなぜ右にちゃんと寄っているのか？ */
+
+
+
+  .title {
+    padding: 160px 0 130px;
+  }
+  .title__name {
+    font-size: 80px;
+  }
+  .title__sub {
+    font-size:  30px;
+  }
+
+
+
+  .nav-base {
+    padding: 50px 0;
+  } 
+  .nav-inner a {
+    display: block;
+    width: 185px;
+    margin: 0 auto;
+  }
+
+
+  .footer-base {
+    padding: 0 15px;
+  }
+} 
+  
