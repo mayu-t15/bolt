@@ -125,11 +125,11 @@ body {
 .works__figures--figure {
   margin-right: 100px;
   margin-bottom: 80px;
-  transition:  opacity 0.3s;
 }
 .works__figures a{
   opacity: 0.7;
   display: inline-block;
+  transition:  opacity 0.3s;
 }
 
 .works__figures--figure > a:hover {
@@ -207,6 +207,7 @@ body {
 }
 .nav-base a{
   display: inline-block;
+  transition: background-color .3s;
 }
 .icons {
   color: #74cfae;
@@ -214,7 +215,6 @@ body {
   width: 185px;
   padding: 25px 0;
   text-decoration: none;
-  transition: background-color .3s;
 }
 .nav-inner > a:hover {
   background-color: #fff;
@@ -302,6 +302,32 @@ body {
     display: none;
   }
 
+  /* ↓aタグ */
+  .hamburger {
+    position: relative;
+    float: right;
+    width: 48px;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 25px;
+    background-color: #ddd;
+    transform: translate(-50%, -50%);
+  }
+  .bar::before {
+    top: -6px;
+  }
+
+
   /* ↓ボタンタグ */
   .c-button {
     position: relative;
@@ -354,30 +380,6 @@ body {
     top: 6px;
   }
   
-/* ↓aタグ */
-  .hamburger {
-    position: relative;
-    float: right;
-    width: 48px;
-    height: 38px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .bar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 2px;
-    width: 25px;
-    background-color: #ddd;
-    transform: translate(-50%, -50%);
-  }
-  .bar::before {
-    top: -6px;
-  }
   
   .bar::after {
     top: 6px;
