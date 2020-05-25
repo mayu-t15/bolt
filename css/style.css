@@ -7,11 +7,11 @@ body {
   width: 1100px;
   margin: 0 auto;
 }
-.font_r{
+.font_r {
   font-family: Raleway;
 }
 
-.menu-sp{
+.hamburger {
   display: none;
 }
 
@@ -53,7 +53,7 @@ body {
 
 
 
-.main{
+.main {
   padding-top: 70px;
   width: 100%;
 }
@@ -82,7 +82,7 @@ body {
   color: #fff;
   padding-top: 50px;
 }
-.desc-inner{
+.desc-inner {
   display: flex;
 }
 .desc__figure {
@@ -121,28 +121,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 40px 0 90px;
+  list-style-type: none;
 }
 .works__figures--figure {
   margin-right: 100px;
   margin-bottom: 80px;
 }
-.works__figures a{
+.works__figures a {
   opacity: 0.7;
   display: inline-block;
-  transition:  opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .works__figures--figure > a:hover {
   opacity: 1;
 }
-/* hover効かなくなってしまった */
 .works__figures--figure:nth-child(3n) {
   margin-right: 0;
 }
 .works__figures--figure:nth-last-child(-n+3){
   margin-bottom: 0;
 }
-
 .works__desc {
   font-size: 0;
 }
@@ -161,7 +160,7 @@ body {
   margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
-  transition:  color .3s;
+  transition: color .3s;
   vertical-align: middle;
 }
 .works__desc--mail-button:hover {
@@ -204,8 +203,9 @@ body {
 }
 .nav-inner {
   text-align: center;
+  list-style: none;
 }
-.nav-base a{
+.nav-base li {
   display: inline-block;
   transition: background-color .3s;
 }
@@ -216,7 +216,7 @@ body {
   padding: 25px 0;
   text-decoration: none;
 }
-.nav-inner > a:hover {
+.nav-inner > li:hover {
   background-color: #fff;
 }
 
@@ -225,9 +225,9 @@ body {
 .footer-base {
   background-color: #74cfae;
   color: #fff;
+  padding: 20px 0 25px;
 }
 .footer-inner {
-  padding: 20px 0 25px;
   text-align: right;
 }
 .footer-base > p {
@@ -240,18 +240,18 @@ body {
 
 
 @media screen and (max-width: 1199px) {
-  .inner{
+  .inner {
     width: 97%;
   }
 
-  .desc{
+  .desc {
     padding-bottom: 25px;
   }
-  .desc-inner{
+  .desc-inner {
     display: block;
     text-align: center;
   }
-  .desc__figure{
+  .desc__figure {
     padding-left: 0;
   }
   .desc__content {
@@ -262,11 +262,11 @@ body {
   ある程度のwidthで固定したほうがいいのか？ */
 
 
-  .works__figures{
+  .works__figures {
     display: block;
     font-size: 0;
   }
-  .works__figures--figure{
+  .works__figures--figure {
     margin: 0;
   }
   .works__figures--figure:nth-child(3n) {
@@ -301,7 +301,9 @@ body {
   .bolt-header__contact {
     display: none;
   }
-
+  .hamburger {
+    display: block;
+  }
   /* ↓aタグ */
   .hamburger {
     position: relative;
@@ -323,9 +325,23 @@ body {
     background-color: #ddd;
     transform: translate(-50%, -50%);
   }
+  .bar::before,
+  .bar::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    transition: inherit;
+  }
   .bar::before {
     top: -6px;
   }
+  .bar::after {
+    top: 6px;
+  }
+
 
 
   /* ↓ボタンタグ */
@@ -360,7 +376,6 @@ body {
     background-color: #ddd;
     transition: inherit;
   }
-  
   .p-hamburger__line::before,
   .p-hamburger__line::after {
     content: '';
@@ -371,28 +386,11 @@ body {
     background-color: inherit;
     transition: inherit;
   }
-  
   .p-hamburger__line::before {
     top: -6px;
   }
-  
   .p-hamburger__line::after {
     top: 6px;
-  }
-  
-  
-  .bar::after {
-    top: 6px;
-  }
-  .bar::before,
-  .bar::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-    transition: inherit;
   }
 
 
@@ -405,23 +403,17 @@ body {
     font-size: 80px;
   }
   .title__sub {
-    font-size:  30px;
+    font-size: 30px;
   }
-
 
 
   .nav-base {
     padding: 50px 0;
   } 
-  .nav-inner a {
+  .nav-inner li {
     display: block;
     width: 100%;
     margin: 0 auto;
-  }
-
-
-  .footer-base {
-    padding: 0 15px;
   }
 } 
   
