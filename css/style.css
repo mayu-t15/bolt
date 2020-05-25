@@ -48,7 +48,7 @@ body {
   float: right;
   font-size: 12px;
   padding: 14px 12px;
-  transition: 0.3s;
+  transition: color 0.3s;
   text-decoration: none;
 }
 .bolt-header__contact:hover {
@@ -93,6 +93,9 @@ body {
 .desc__figure {
   padding-left: 150px;
 }
+.desc__figure > img {
+  vertical-align: bottom;
+}
 .desc__content {
   font-size: 20px;
   text-align: center;
@@ -128,15 +131,16 @@ body {
   margin-right: 100px;
   margin-bottom: 80px;
   opacity: 0.7;
-  transition: 0.3s;
+  transition:  opacity 0.3s;
 }
 .works__figures a{
   display: inline-block;
 }
 
-.works__figures--figure:hover {
+.works__figures--figure > a:hover {
   opacity: 1;
 }
+/* hover効かなくなってしまった */
 .works__figures--figure:nth-child(3n) {
   margin-right: 0;
 }
@@ -162,7 +166,7 @@ body {
   margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
-  transition: .3s;
+  transition:  color .3s;
   vertical-align: middle;
 }
 .works__desc--mail-button:hover {
@@ -215,7 +219,7 @@ body {
   width: 185px;
   padding: 25px 0;
   text-decoration: none;
-  transition: .3s;
+  transition: background-color .3s;
 }
 .nav-inner > a:hover {
   background-color: #fff;
@@ -242,11 +246,9 @@ body {
 
 @media screen and (max-width: 1199px) {
   .inner{
-    width: 100%;
+    width: 97%;
   }
-  .bolt-header{
-    padding: 15px;
-  }
+
   .desc{
     padding-bottom: 25px;
   }
@@ -295,11 +297,6 @@ body {
   .skill:nth-child(1) {
     margin-top: 0;
   }
-
-
-  .footer-base {
-    padding: 0 15px;
-  }
 } 
 
 
@@ -330,7 +327,7 @@ body {
     display: inline-block;
     font-size: 1.3em;
     padding: 10px;
-    transition: .3s;
+    transition: border .3s, color .3s;
     vertical-align: center;
   }
 
@@ -350,7 +347,9 @@ body {
     box-sizing: border-box;
     font-size: 12px;
   }
-
+  /* .fa-bars:before {
+    width: 1.5em;
+  } */
 
   /* 
     menuバーの横幅が違う */
