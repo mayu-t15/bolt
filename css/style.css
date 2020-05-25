@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-
-
-
-
 body {
   font-family: 'Lato';
 }
@@ -15,12 +11,16 @@ body {
   font-family: Raleway;
 }
 
+
 .menu-sp{
   display: none;
 }
-.menu-content {
-  display: none;
-}
+/* .menu-contents {
+  height: 0;
+  opacity: 0;
+} */
+
+
 
 .bolt-header {
   background-color: #fff;
@@ -152,8 +152,6 @@ body {
   font-size: 20px;
   line-height: 1.5em;
   width: 600px;
-  /* 
-  works__desc--textの部分は勝手にwidthをしなくてもできるはずなのか？ */
   vertical-align: middle;
 }
 .works__desc--mail-button {
@@ -219,7 +217,7 @@ body {
   text-decoration: none;
   transition: .3s;
 }
-.icons:hover {
+.nav-inner > a:hover {
   background-color: #fff;
 }
 
@@ -246,11 +244,9 @@ body {
   .inner{
     width: 100%;
   }
-
   .bolt-header{
     padding: 15px;
   }
-
   .desc{
     padding-bottom: 25px;
   }
@@ -265,7 +261,7 @@ body {
     width: 80%;
     margin: 20px auto 0;
   }
-  /* textがどんどん小さくなっていく。
+  /* textが動く。
   ある程度のwidthで固定したほうがいいのか？ */
 
 
@@ -310,10 +306,6 @@ body {
 
 @media screen and (max-width: 767px)
 {
-  /* .bolt-header {
-    position: relative;
-    なんで変ななる？
-  } */
   .bolt-header__contact {
     display: none;
   }
@@ -327,43 +319,41 @@ body {
   }
   #menu-icon:hover {
     cursor: pointer;
+    color: #333;
+    border: 1px solid #333;
   }
   #menu-icon {
     border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
     color: #ddd;
     display: inline-block;
     font-size: 1.3em;
     padding: 10px;
-    border: 1px solid #ddd;
+    transition: .3s;
     vertical-align: center;
-    box-sizing: border-box;
   }
-  .menu-contents {
-    display: none;
-    padding: 15px 0;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.2; */
-  }
+
   .menu-contact {
-    padding: 20px;
     background-color: #74cfae;
-  }
-
-  #menu-icon:checked .menu-contents {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
     display: block;
-    top: 73px;
-    left: 0;
+  }
+
+  #menu-input:checked .menu-contents {
+    height: auto;
+    opacity: 1;
+    border-top: 3px solid #333;
+    z-index: 60;
+    box-sizing: border-box;
+    font-size: 12px;
   }
 
 
-  /* .menu-bar:before{
-    width: 1.8em;
-    バーの横幅が違う
-  } */
-
-  /* menu-iconなぜ右にちゃんと寄っているのか？ */
+  /* 
+    menuバーの横幅が違う */
 
 
 
@@ -384,7 +374,7 @@ body {
   } 
   .nav-inner a {
     display: block;
-    width: 185px;
+    width: 100%;
     margin: 0 auto;
   }
 
