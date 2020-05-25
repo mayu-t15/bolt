@@ -204,8 +204,9 @@ body {
 .nav-inner {
   text-align: center;
   list-style: none;
+  letter-spacing: -100px;
 }
-.nav-base li {
+.nav-inner li, .nav-inner a{
   display: inline-block;
   transition: background-color .3s;
 }
@@ -215,6 +216,7 @@ body {
   width: 185px;
   padding: 25px 0;
   text-decoration: none;
+  letter-spacing: normal;
 }
 .nav-inner > li:hover {
   background-color: #fff;
@@ -291,6 +293,13 @@ body {
   }
   .skill:nth-child(1) {
     margin-top: 0;
+  }
+
+  .nav-base li {
+    width:20%;
+  }
+  .nav-inner a, .nav-inner .icons {
+    width: 100%;
   }
 } 
 
